@@ -1,15 +1,15 @@
 PKG := root
 
-all:
-	mkdir -pv src
-	pushd src
-	git clone https://github.com/notarealdeveloper/ensure
-	git clone https://github.com/notarealdeveloper/wnix
-	popd
+all: build install clean
 
-install: all
+build:
+	bin/build
+
+install:
+	bin/install
 
 clean:
-	rm -rvi src
+	bin/clean
 
-uninstall: clean
+uninstall:
+	bin/uninstall
