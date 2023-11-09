@@ -1,13 +1,15 @@
 PKG := root
 
 all:
-	python -m build --sdist
+	mkdir -pv src
+	pushd src
+	git clone https://github.com/notarealdeveloper/ensure
+	git clone https://github.com/notarealdeveloper/wnix
+	popd
 
 install: all
-	pip install dist/*.tar.gz
-
-uninstall:
-	pip uninstall $(PKG)
 
 clean:
-	rm -rv dist/ src/*.egg-info
+	rm -rvi src
+
+uninstall: clean
