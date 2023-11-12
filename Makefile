@@ -1,15 +1,22 @@
-PKG := root
+PKG := meta
 
-all: build install clean
+clone:
+	bin/clone.sh
 
 build:
-	bin/build
+	bin/build.sh
 
-install:
-	bin/install
+install: build
+	bin/install.sh
+
+develop:
+	bin/develop.sh
+
+check:
+	bin/check.sh
 
 clean:
-	bin/clean
+	bin/clean.sh
 
 uninstall:
-	bin/uninstall
+	bin/uninstall.sh
