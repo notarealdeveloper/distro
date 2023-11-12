@@ -1,9 +1,9 @@
 #!/bin/bash
 
-mkdir -pv src
+packages="$(cat "$1")"
+mkdir -pv pkg
 pushd src
-git clone https://github.com/notarealdeveloper/callable_module
-git clone https://github.com/notarealdeveloper/is_instance
-git clone https://github.com/notarealdeveloper/ensure
-git clone https://github.com/notarealdeveloper/wnix
+for package in ${packages[@]}; do
+    git clone "$package"
+done
 popd

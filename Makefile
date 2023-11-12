@@ -1,7 +1,7 @@
 PKG := meta
 
 clone:
-	bin/clone.sh
+	bin/clone.sh packages.txt
 
 build:
 	bin/build.sh
