@@ -1,5 +1,6 @@
 #!/bin/bash
 
+pip install build pytest
 packages="$(cat "$1")"
 mkdir -pv pkg
 pushd pkg
