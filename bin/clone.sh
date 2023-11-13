@@ -2,7 +2,7 @@
 
 packages="$(cat "$1")"
 mkdir -pv pkg
-pushd src
+pushd pkg
 for package in ${packages[@]}; do
     git clone "$package"
 done

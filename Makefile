@@ -3,6 +3,9 @@ PKG := meta
 clone:
 	bin/clone.sh packages.txt
 
+pull:
+	bin/pull.sh
+
 build:
 	bin/build.sh
 
@@ -17,6 +20,9 @@ check:
 
 clean:
 	bin/clean.sh
+
+pull-prod:
+	bin/pull-prod.sh
 
 uninstall:
 	bin/uninstall.sh
