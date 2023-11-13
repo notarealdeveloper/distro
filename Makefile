@@ -1,4 +1,4 @@
-PKG := meta
+PKG := distro
 
 clone:
 	bin/clone.sh packages.txt
