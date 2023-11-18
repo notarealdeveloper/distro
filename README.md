@@ -1,6 +1,7 @@
 # dst
 
 > _the end user is the end_
+> _nth stair handbook_
 
 ```
             src
@@ -10,8 +11,6 @@
 
    2. how code begins
 
-   3. abbr for source
-
             ---
 
             dst
@@ -19,8 +18,6 @@
    1. opposite of src
 
    2. where code ends
-
-   3. abbr for distro
 
            ---
 
@@ -30,20 +27,20 @@
 
            lib
 
-   * re-usable code
+   * re-usable
    * language specific
-   * reuse with import
-   * stands for library
-   * the beginning, or src
+   * intra-process
+   * import / include / ld.so
+   * the beginning (src)
 
            ---
 
            bin
 
-   * re-usable code
+   * re-usable
    * language agnostic
-   * reuse with exec
-   * stands for binary
+   * inter-process
+   * exec system call
    * the middle
 
            ---
@@ -51,13 +48,12 @@
            app
 
    * not re-usable
-   * lives in opt, which
-     stands for "optional"
-   * also known as a "product"
-   * what most company processes
-     implicitly incentivise all
-     internal code to be.
-   * the end, or dst
+   * lives in opt, which stands for "optional"
+     because it's largely unnecessary
+   * also known as a "product", a "service",
+     a "deployment", or "production software"
+   * the worst code there is
+   * the end (dst)
 
            ---
           
