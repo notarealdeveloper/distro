@@ -11,14 +11,14 @@ pkgs=(
 
 bootstrap() {
     mkdir -pv src
-    pushd src
+    pushd src >/dev/null
     for pkg in "${pkgs[@]}"; do
         dst="$(basename "$pkg")"
         if [[ ! -d "$dst" ]]; then
             git clone "$pkg"
         fi
     done
-    popd
+    popd >/dev/null
 }
 
 if [[ -z $1 || ! -d src ]]; then
@@ -26,10 +26,10 @@ if [[ -z $1 || ! -d src ]]; then
     exit 0
 fi
 
-pushd src
+pushd src >/dev/null
 for pkg in *; do
-    pushd "$pkg"
+    pushd "$pkg" >/dev/null
     $@
-    popd
+    popd >/dev/null
 done
-popd
+popd >/dev/null
