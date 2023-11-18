@@ -29,7 +29,10 @@ fi
 pushd src >/dev/null
 for pkg in *; do
     pushd "$pkg" >/dev/null
+    echo "================="
+    echo "# $pkg"
     $@
     popd >/dev/null
 done
 popd >/dev/null
+echo "================="
