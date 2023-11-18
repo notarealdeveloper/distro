@@ -29,3 +29,6 @@ pull-prod:
 
 uninstall:
 	./map make uninstall
+
+remove:
+	rm -rf src
