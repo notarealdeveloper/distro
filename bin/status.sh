@@ -1,11 +1,9 @@
 #!/bin/bash
 
-pushd pkg >/dev/null
+pushd src
 for pkg in *; do
-    pushd "$pkg" >/dev/null
-    echo $(basename $PWD)
-    git status
-    echo '=========================='
-    popd >/dev/null
+    pushd "$pkg"
+    pwd && git status && echo '========'
+    popd
 done
-popd >/dev/null
+popd

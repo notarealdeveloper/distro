@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pushd pkg
+pushd src
 for pkg in *; do
     pushd "$pkg"
     make develop

@@ -1,10 +1,10 @@
 #!/bin/bash
 
 pip install build pytest
-packages="$(cat "$1")"
-mkdir -pv pkg
-pushd pkg
-for package in ${packages[@]}; do
-    git clone "$package"
+pkgs="$(cat "$1")"
+mkdir -pv src
+pushd src
+for pkg in ${pkgs[@]}; do
+    git clone "$pkg"
 done
 popd
