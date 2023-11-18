@@ -1,7 +1,18 @@
 #!/bin/bash
 
-if [[ ! -d src ]]; then
-    ./bootstrap
+bootstrap() {
+    pkgs=($(cat packages.txt))
+    mkdir -pv src
+    pushd src
+    for pkg in "${pkgs[@]}"; do
+        git clone "$pkg"
+    done
+    popd
+}
+
+if [[ -z $1 || ! -d src ]]; then
+    bootstrap
+    exit 0
 fi
 
 pushd src

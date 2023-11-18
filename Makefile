@@ -1,7 +1,7 @@
 PKG := distro
 
 clone:
-	./bootstrap
+	./map
 
 status:
 	./map git status
