@@ -1,34 +1,34 @@
-PKG := distro
+PKG := dst
 
 clone:
-	./map
+	./dst
 
 status:
-	./map git status
+	./dst git status
 
 pull:
-	./map git pull
+	./dst git pull
 
 build:
-	./map make
+	./dst make
 
 install:
-	./map make install
+	./dst make install
 
 develop:
-	./map make develop
+	./dst make develop
 
 check:
-	./map make check
+	./dst make check
 
 clean:
-	./map make clean
+	./dst make clean
 
 pull-prod:
-	./map make pull-prod
+	./dst make pull-prod
 
 uninstall:
-	./map make uninstall
+	./dst make uninstall
 
 remove:
 	rm -rf src
