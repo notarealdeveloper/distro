@@ -6,6 +6,9 @@ clone:
 pull:
 	bin/pull.sh
 
+status:
+	bin/status.sh
+
 build:
 	bin/build.sh
 
