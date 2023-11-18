@@ -13,7 +13,10 @@ bootstrap() {
     mkdir -pv src
     pushd src
     for pkg in "${pkgs[@]}"; do
-        git clone "$pkg"
+        dst="$(basename "$pkg")"
+        if [[ ! -d "$dst" ]]; then
+            git clone "$pkg"
+        fi
     done
     popd
 }
