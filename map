@@ -1,7 +1,15 @@
 #!/bin/bash
 
+pkgs=(
+    https://github.com/notarealdeveloper/callable_module
+    https://github.com/notarealdeveloper/is_instance
+    https://github.com/notarealdeveloper/assure
+    https://github.com/notarealdeveloper/mmry
+    https://github.com/notarealdeveloper/embd
+    https://github.com/notarealdeveloper/wnix
+)
+
 bootstrap() {
-    pkgs=($(cat packages.txt))
     mkdir -pv src
     pushd src
     for pkg in "${pkgs[@]}"; do
