@@ -1,31 +1,31 @@
 PKG := distro
 
 clone:
-	bin/clone.sh packages.txt
+	./map git clone
 
 pull:
-	bin/pull.sh
+	./map git pull
 
 status:
-	bin/status.sh
+	./map git status
 
 build:
-	bin/build.sh
+	./map make
 
-install: build
-	bin/install.sh
+install:
+	./map make install
 
 develop:
-	bin/develop.sh
+	./map make develop
 
 check:
-	bin/check.sh
+	./map make check
 
 clean:
-	bin/clean.sh
+	./map make clean
 
 pull-prod:
-	bin/pull-prod.sh
+	./map make pull-prod
 
 uninstall:
-	bin/uninstall.sh
+	./map make uninstall
