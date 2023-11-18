@@ -1,6 +1,6 @@
 https://github.com/notarealdeveloper/callable_module
 https://github.com/notarealdeveloper/is_instance
 https://github.com/notarealdeveloper/assure
-https://github.com/notarealdeveloper/kernel
-https://github.com/notarealdeveloper/rootfs
+https://github.com/notarealdeveloper/mmry
+https://github.com/notarealdeveloper/embd
 https://github.com/notarealdeveloper/wnix
