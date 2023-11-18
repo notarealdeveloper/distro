@@ -1,0 +1,9 @@
+#!/bin/bash
+
+pkgs=($(cat packages.txt))
+mkdir -pv src
+pushd src
+for pkg in "${pkgs[@]}"; do
+    git clone "$pkg"
+done
+popd

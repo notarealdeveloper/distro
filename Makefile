@@ -1,13 +1,10 @@
 PKG := distro
 
-clone:
-	./map git clone
+status:
+	./map git status
 
 pull:
 	./map git pull
-
-status:
-	./map git status
 
 build:
 	./map make
