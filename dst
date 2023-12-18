@@ -3,6 +3,7 @@
 pkgs=(
     https://github.com/notarealdeveloper/callable_module
     https://github.com/notarealdeveloper/signalhandlers
+    https://github.com/notarealdeveloper/interprocess
     https://github.com/notarealdeveloper/is_instance
     https://github.com/notarealdeveloper/executive
     https://github.com/notarealdeveloper/assure
