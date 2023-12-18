@@ -1,21 +1,6 @@
-# dst
+# self
 
-```
-            src
-            ===
-
-   1. opposite of dst
-
-   2. how code begins
-
-            ---
-
-            dst
-            ===
-
-   1. opposite of src
-
-   2. where code ends
-
-   3. short for distro
-```
+1. Stop writing apps.
+2. Optimize for re-use.
+3. Make self installable.
+4. Now, start writing apps.
