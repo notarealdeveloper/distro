@@ -7,6 +7,7 @@ pkgs=(
     https://github.com/notarealdeveloper/is_instance
     https://github.com/notarealdeveloper/executive
     https://github.com/notarealdeveloper/assure
+    https://github.com/notarealdeveloper/babel
     https://github.com/notarealdeveloper/webfs
     https://github.com/notarealdeveloper/kern
     https://github.com/notarealdeveloper/mmry
