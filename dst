@@ -1,18 +1,18 @@
 #!/bin/bash
 
 pkgs=(
-    https://github.com/notarealdeveloper/callable_module
-    https://github.com/notarealdeveloper/signalhandlers
-    https://github.com/notarealdeveloper/interprocess
-    https://github.com/notarealdeveloper/is_instance
-    https://github.com/notarealdeveloper/executive
-    https://github.com/notarealdeveloper/assure
-    https://github.com/notarealdeveloper/babel
-    https://github.com/notarealdeveloper/webfs
-    https://github.com/notarealdeveloper/kern
-    https://github.com/notarealdeveloper/mmry
-    https://github.com/notarealdeveloper/embd
-    https://github.com/notarealdeveloper/wnix
+    git@github.com:notarealdeveloper/callable_module
+    git@github.com:notarealdeveloper/signalhandlers
+    git@github.com:notarealdeveloper/interprocess
+    git@github.com:notarealdeveloper/is_instance
+    git@github.com:notarealdeveloper/executive
+    git@github.com:notarealdeveloper/assure
+    git@github.com:notarealdeveloper/babel
+    git@github.com:notarealdeveloper/webfs
+    git@github.com:notarealdeveloper/kern
+    git@github.com:notarealdeveloper/mmry
+    git@github.com:notarealdeveloper/embd
+    git@github.com:notarealdeveloper/wnix
 )
 
 bootstrap() {
