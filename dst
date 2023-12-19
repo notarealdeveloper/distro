@@ -8,6 +8,7 @@ pkgs=(
     git@github.com:notarealdeveloper/executive
     git@github.com:notarealdeveloper/assure
     git@github.com:notarealdeveloper/babel
+    git@github.com:notarealdeveloper/noelf
     git@github.com:notarealdeveloper/webfs
     git@github.com:notarealdeveloper/kern
     git@github.com:notarealdeveloper/mmry
